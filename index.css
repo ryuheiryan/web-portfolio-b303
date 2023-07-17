@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Sawarabi+Mincho&display=swap');
+
+:root {
+	--red: #ef1d00;
+	--white: #f2e8ce;
+	--black: #150300;
+	--gold: #f2e852;
+
+	scroll-behavior: smooth;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-size: 1rem;
+}
+
+nav {
+	background-color: var(--black);
+}
+
+.nav-link {
+	color: var(--white);
+	font-size: 1.25rem;
+	font-weight: 500;
+}
+
+.nav-link:hover {
+	color: var(--gold);
+}
+
+section {
+	height: 100vh;
+}
+
+#landing, #tools {
+	background-color: var(--black);
+}
+
+#projects, #contact {
+	background-color: var(--white);
+}
+
+#profile-picture {
+	background-color: #150300;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23410800' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%236c0d00' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23981300' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23c31800' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23EF1D00' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+	background-attachment: fixed;
+	background-size: cover;
+	border-radius: 50%;
+}
+
+#surname {
+	color: var(--gold);
+}
+
+h1 {
+	font-family: 'Sawarabi Mincho', serif;
+	color: var(--red);
+	font-size: 9vw;
+	font-weight: bolder;
+
+	overflow: hidden;
+	white-space: nowrap;
+	border-right: 0.25rem solid var(--gold);
+	margin: 0 auto;
+	animation: 
+		typing 3s steps(40, end),
+		blink-caret .75s step-end infinite;
+}
+
+h2 {
+	font-family: 'Lexend Deca', sans-serif;
+	color: var(--gold);
+	font-size: 5vw;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: var(--gold) }
+}
+
+h3 {
+	font-family: 'Lexend Deca', sans-serif;
+	color: var(--white);
+	font-size: 2.5rem;
+	font-weight: bold;
+}
+
+h4 {
+	font-family: 'Sawarabi Mincho', serif;
+	color: var(--white);
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+@media (min-width: 768px ) {
+	h1 {
+		font-size: 6vw;
+	}
+
+	h2 {
+		font-size: 4vw;
+	}
+}
+
+.black {
+	color: var(--black);
+}
+
+.project-imgs {
+	width: 75%;
+	aspect-ratio: 4 / 3;
+	border-radius: 10%;
+}
+
+.tool-icon-container {
+	background-color: #150300;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23410800' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%236c0d00' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23981300' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23c31800' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23EF1D00' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+	background-attachment: fixed;
+	background-size: cover;
+	border-radius: 25%;
+}
+
+.tool-icons {
+	width: 75%;
+	aspect-ratio: 1 / 1;
+	fill: var(--gold);
+}
+
+.contact-icons {
+	width: 75%;
+	aspect-ratio: 1 / 1;
+	fill: var(--black);
+}
+
+.contact-icons:hover {
+	fill: var(--red);
+	transition-delay: 100ms;
+}
+
+
+
+label {
+	color: var(--black);
+	font-family: 'Lexend Deca', sans-serif;
+	font-size: 1.25rem;
+	font-weight: 500;
+}
+
+.btn {
+	background-color: var(--gold);
+	color: var(--black);
+	font-family:  'Lexend Deca', sans-serif;
+	font-weight: 750;
+}
+
+.btn:hover {
+	background-color: var(--red);
+	color: var(--white);
+}
