@@ -52,6 +52,10 @@ section {
 	border-radius: 50%;
 }
 
+#profile-picture img:hover {
+	content: url("./images/bgremoved.png");
+}
+
 #surname {
 	color: var(--gold);
 }
