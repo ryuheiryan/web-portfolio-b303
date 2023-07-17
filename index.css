@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Sawarabi+Mincho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Sawarabi+Mincho&display=swap');
 
 :root {
 	--red: #ef1d00;
@@ -16,6 +16,7 @@
 	box-sizing: border-box;
 	text-decoration: none;
 	font-size: 1rem;
+	font-family: 'Noto Sans JP', sans-serif;
 }
 
 nav {
@@ -74,12 +75,11 @@ h1 {
 	border-right: 0.25rem solid var(--gold);
 	margin: 0 auto;
 	animation: 
-		typing 3s steps(40, end),
+		typing 3s steps(40, end) infinite,
 		blink-caret .75s step-end infinite;
 }
 
 h2 {
-	font-family: 'Lexend Deca', sans-serif;
 	color: var(--gold);
 	font-size: 5vw;
 }
@@ -96,10 +96,10 @@ h2 {
 
 h3 {
 	text-decoration: underline var(--white) solid 0.25rem;
-	font-family: 'Lexend Deca', sans-serif;
 	color: var(--white);
 	font-size: 2rem;
 	font-weight: bold;
+	opacity: 0.80;
 }
 
 h4 {
@@ -107,6 +107,8 @@ h4 {
 	color: var(--white);
 	text-align: center;
 	font-size: 1.5rem;
+	font-weight: bold;
+	opacity: 0.80;
 }
 
 @media (min-width: 768px ) {
@@ -130,6 +132,11 @@ h4 {
 	border-radius: 10%;
 }
 
+.project-imgs:hover {
+	width: 70%;
+	transition-duration: 200ms;
+}
+
 .tool-icon-container {
 	background-color: #150300;
 	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23410800' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%236c0d00' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23981300' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23c31800' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23EF1D00' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
@@ -144,8 +151,9 @@ h4 {
 	fill: var(--gold);
 }
 
-.project-imgs:hover, .tool-icons:hover {
+.tool-icons:hover {
 	width: 70%;
+	fill: var(--white);
 	transition-duration: 200ms;
 }
 
@@ -161,10 +169,8 @@ h4 {
 	transition-duration: 200ms;
 }
 
-
 label {
 	color: var(--black);
-	font-family: 'Lexend Deca', sans-serif;
 	font-size: 1.25rem;
 	font-weight: 500;
 }
@@ -172,11 +178,11 @@ label {
 .btn {
 	background-color: var(--gold);
 	color: var(--black);
-	font-family:  'Lexend Deca', sans-serif;
 	font-weight: 750;
 }
 
 .btn:hover {
 	background-color: var(--red);
 	color: var(--white);
+	transition-duration: 100ms;
 }
